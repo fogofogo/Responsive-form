@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container row clear header">
+    <div id="main" class="col-3-4 mobile-full">
+
+        <!-- Form -->
+        <form id="contact-form" action="/" method="post">
+            <h3>Contact us</h3>
+            <p>Please enter your details below and we will get back to you.</p>
+            <div>
+                <label>
+                    <span>Full name: (*)</span>
+                    <input placeholder="First name Last name" type="text" tabindex="1" required autofocus>
+                </label>
+            </div>
+            <div>
+                <label>
+                    <span>Email: (*)</span>
+                    <input placeholder="Please enter your email address" type="email" tabindex="2" required>
+                </label>
+            </div>
+            <div>
+                <label>
+                    <span>Address: (*)</span>
+                    <textarea rows="4" required></textarea>
+                </label>
+            </div>
+            <div>
+                <label>
+                    <span>Division</span>
+                    <select id="division-dd">
+                        <option val="News">News</option>
+                        <option val="Sport">Sport</option>
+                    </select>
+                </label>
+            </div>
+            <div>
+                <label>
+                    <span>Department</span>
+                    <select id="department-dd"></select>
+                </label>
+            </div>
+            <div>
+                <label>
+                    <span>Country</span>
+                    <select id="country-dd">
+                        <option val="England">England</option>
+                        <option val="Scotland">Scotland</option>
+                    </select>
+                </label>
+            </div>
+            <div>
+                <label>
+                    <span>Building</span>
+                    <select id="building-dd"></select>
+                </label>
+            </div>
+            <div>
+                <button name="submit" type="submit" id="contact-submit">Send Message</button>
+            </div>
+        </form>
+        <!-- /Form -->
+
+    </div>
+</div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="assets/js/scripts.js"></script>
+</body>
+</html>
